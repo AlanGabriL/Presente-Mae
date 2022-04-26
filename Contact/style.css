@@ -1,0 +1,84 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Variables */
+:root {
+  --Background: #212833;
+  --Span: #3dd039;
+}
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  background-color: var(--Background);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section Navbar */
+.nav-title {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+nav h1 {
+  font-weight: 300;
+  font-size: 40px;
+}
+span {
+  color: var(--Span);
+  font-weight: 400;
+}
+hr {
+  border: 1px solido gray;
+  color: gray;
+  margin-top: 15px;
+  width: 267px;
+  margin-bottom: 50px;
+}
+/* End Section Navbar */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  margin-top: 50px;
+}
+.items {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 150px;
+}
+#BtnZap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+  border: none;
+  font-size: 20px;
+  color: var(--Background);
+  background-color: var(--Span);
+  border-radius: 10px;
+  transition: 0.7s;
+}
+#BtnZap:hover {
+  color: black;
+  transform: scale(1.05);
+}
+img {
+  height: 30px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saiba Mais</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1><span>BM</span></h1>
+      <div class="nav-title">
+        <h1>Ar</h1>
+        <h1>Condicionado</h1>
+      </div>
+      <hr />
+    </nav>
+    <!-- Cards -->
+    <main>
+      <div class="cards">
+        <div class="items">
+          <h3><span>Higienização</span></h3>
+          <h3>R$ xxxx</h3>
+        </div>
+        <div class="items">
+          <h3><span>Instalação</span></h3>
+          <h3>R$ xxxx</h3>
+        </div>
+        <div class="items">
+          <h3><span>Concerto</span></h3>
+          <h3>R$ xxxx</h3>
+        </div>
+      </div>
+    </main>
+    <button id="BtnZap" onclick="send();">Chamar via WhatsApp<img src="./Zap-60.png" /></button>
+    <script>
+      function send() {
+        window.open("https://web.whatsapp.com/send?phone=5545988113189");
+      }
+    </script>
+  </body>
+</html>
