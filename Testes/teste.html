@@ -1,0 +1,59 @@
+<p id="texto" contenteditable>123468526</p>
+<div><button>Copiar</button></div>
+<div><div id="naoCopiado">copiado</div></div>
+
+<script>
+  document.querySelector("button").addEventListener("click", function (event) {
+    document.querySelector("p").focus();
+    document.execCommand("selectAll", false, null);
+    document.execCommand("copy");
+
+    btnNovo = document.querySelector("#naoCopiado");
+
+    setarID();
+  });
+  function funcao() {
+    btnNovo.setAttribute("id", "naoCopiado");
+  }
+  function setarID() {
+    btnNovo.setAttribute("id", "Copiado");
+    setTimeout(funcao, 3000);
+  }
+</script>
+<style>
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(166, 159, 159);
+    border-radius: 20px;
+    border: none;
+  }
+  p:focus {
+    border: none;
+    outline: none;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    padding: 20px 40px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  #Copiado {
+    margin: 20px 0;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 10px gray;
+    transition: opacity 0.7s;
+  }
+  #naoCopiado {
+    display: none;
+  }
+</style>
