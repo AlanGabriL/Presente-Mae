@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saiba Mais</title>
+    <!-- link for icon -->
+    <link
+      rel="shortcut icon"
+      href="../IMG/favicon_io/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- link for style -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -33,10 +40,30 @@
         </div>
       </div>
     </main>
-    <button id="BtnZap" onclick="send();">Chamar via WhatsApp<img src="./Zap-60.png" /></button>
+    <div class="contact">
+      <button class="BtnZap" onclick="send();">
+        Chamar via WhatsApp<img src="./Zap-60.png" />
+      </button>
+      <h3>Ou</h3>
+      <button class="BtnZap" onclick="CopyNumber()">
+        Clique aqui para copiar numero do Celular
+      </button>
+    </div>
     <script>
       function send() {
         window.open("https://web.whatsapp.com/send?phone=5545988113189");
+      }
+      function CopyNumber() {
+        const texto = "55 45 988113189";
+        let inputTest = document.createElement("input");
+        inputTest.value = texto;
+
+        document.body.appendChild(inputTest);
+
+        inputTest.select(texto);
+        document.execCommand("copy");
+        document.body.removeChild(inputTest);
+        alert("Copiado!");
       }
     </script>
   </body>

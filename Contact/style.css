@@ -63,7 +63,7 @@ main {
   justify-content: space-around;
   gap: 150px;
 }
-#BtnZap {
+.BtnZap {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -73,12 +73,19 @@ main {
   color: var(--Background);
   background-color: var(--Span);
   border-radius: 10px;
-  transition: 0.7s;
+  transition: 0.5s;
+  margin: 50px 0;
 }
-#BtnZap:hover {
+.BtnZap:hover {
   color: black;
   transform: scale(1.05);
 }
 img {
   height: 30px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
