@@ -1,5 +1,5 @@
 /* imports */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -11,6 +11,25 @@
   --Background: #212833;
   --Span: #3dd039;
 }
+body > a {
+  text-decoration: none;
+  background: var(--Span);
+  cursor: pointer;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+body > a:hover {
+  transform: translateX(10px);
+}
 body {
   display: flex;
   align-items: center;
@@ -18,7 +37,7 @@ body {
   justify-content: center;
   color: #ffffff;
   background-color: var(--Background);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Section Navbar */
@@ -53,6 +72,7 @@ hr {
 main {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   padding: 50px;
   margin-top: 50px;
