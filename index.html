@@ -7,54 +7,68 @@
     <title>Presentinho . . .</title>
     <!-- Link for Css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Scrool reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <div class="content">
-      <h1>Texto para dia das mães</h1>
+      <h1 class="escolhido">Texto para dia das mães</h1>
       <div class="img">
-        <img src="./assets/fotoperfil.webp" alt="Mae" />
+        <img class="escolhido" src="./assets/fotoperfil.webp" alt="Mae" />
       </div>
-      <p>
+      <p class="escolhido">
         Mãe, dona <span>Márcia Ferler Makus</span>, uma mulher tão incrível que
         tanto homem deseja, está fazendo seu aniversário hoje, fazendo incríveis
         <span>41 anos</span>.
       </p>
-      <p>
+      <p class="escolhido">
         A nossa família, como um todo, somos muito
-        <a class="span-red">falhos</a>, <a class="span-red">imperfeitos</a>, e
-        muitas vezes falhamos com a sua pessoa e seu amor dado por você, e por
-        mais extraordinário possível, tu aguentastes todas essas
-        <a class="span-red">falhas</a> e ainda devolve com mais amor e oração
-        possível.
+        <a class="span-red escolhido">falhos</a>,
+        <a class="span-red escolhido">imperfeitos</a>, e muitas vezes falhamos
+        com a sua pessoa e seu amor dado por você, e por mais extraordinário
+        possível, tu aguentastes todas essas
+        <a class="span-red escolhido">falhas</a> e ainda devolve com mais amor e
+        oração possível.
       </p>
-      <p>
+      <p class="escolhido">
         como quase toda pessoa, você tem seu <span>limite</span>, e se
         sobrecarrega, o que para ser normalizar, precisa de descanso, o que você
-        estava tendo <a class="span-green">( fonte : Pai : )</a>
+        estava tendo <a class="span-green escolhido">( fonte : Pai : )</a>
       </p>
-      <p>
-        Creio que Eu,<a class="span-green">Alan Gabriel, Ana Milene</a> , e o
-        nosso doentinho da Família <a class="span-green">Isaque Daniel</a>,
-        Tentamos, sim, Agradar aos seus desejos e vontades. Entretanto, como
-        parte da Genética, e da nossa preguiça mesmo,
-        <a class="span-red">pecamos</a>
+      <p class="escolhido">
+        Creio que Eu,<a class="span-green escolhido"
+          >Alan Gabriel, Ana Milene</a
+        >
+        , e o nosso doentinho da Família
+        <a class="span-green escolhido">Isaque Daniel</a>, Tentamos, sim,
+        Agradar aos seus desejos e vontades. Entretanto, como parte da Genética,
+        e da nossa preguiça mesmo,
+        <a class="span-red escolhido">pecamos</a>
         diante das vontades de <span>Deus</span> e das ordens dadas pelo nosso
         querido careca e nossa querida mamãe, e desagradamos seus olhos e
         corações , as vezes fazendo algo de inapropriado ou não fazendo o que
         deveria ser feito e organizado,
       </p>
-      <p>
+      <p class="escolhido">
         Em nome de toda a minha pessoa, o meu carater, o meu espírito e meu
         conhecimento conhecido, quero pedir perdão pelas minhas
-        <a class="span-red"
+        <a class="span-red escolhido"
           >imprecisões, minhas inexatidões, meus lapsos e minhas fissuras </a
         >( nome chique para erro e falha ) . Quero dizer ainda que agradeço por
         toda a tentativa de colocar conhecimento, tanto bíblico, espirítual e
         amoroso,na minha cabeça imadura de adolecente .. e quero agradecer por
         todo o carinho dado por nós, em forma de comida, de limpeza, e claro ,
         de abraços e beijinhos . Um Beijão
-        <a class="span-red">S2</a>
+        <a class="span-red escolhido">S2</a>
       </p>
     </div>
+    <script>
+      window.sr = ScrollReveal({ reset: true });
+      sr.reveal('.escolhido', {
+        duration: 700,
+        origin: 'bottom',
+        distance: '10px',
+      });
+    </script>
   </body>
 </html>

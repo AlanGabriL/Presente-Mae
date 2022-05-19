@@ -60,3 +60,9 @@ a.flor {
   display: flex;
   text-align: center;
 }
+p,
+a,
+img,
+h1 {
+  visibility: hidden;
+}
